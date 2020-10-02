@@ -34,7 +34,7 @@ public class EmployeeController {
 	public String employeeById(@RequestParam(value = "id") int id) {
 
 		Employee emp = service.findById(id);
-		return "Department of employee is " + emp.getDepartment();
+		return "Department of employee " + emp.getDepartment();
 
 	}
 
